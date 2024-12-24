@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* fist section */
+.first-section{
+    padding: 0 1.5rem;
+}
+
+.header-text h1{
+    font-size: 6.2rem;
+    text-align: center;
+}
+
+.header-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.header-img p{
+    width: 34rem;
+    position: relative;
+    bottom: 4rem;
+    left: .6rem;
+}
+
+.upgrade-style h1{
+    font-size: 3.2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 2rem;
+}
+
+
+/* second section */
+.dreams-card{
+    background: linear-gradient(45deg, #8a350bde, #ab6616ba);
+    width: 43rem;
+    height: 22rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    top: 2rem;
+}
+
+.dreams-card h1{
+    font-size: 3.8rem;
+    width: 45rem;
+    position: relative;
+    top: .4rem;
+    left: .8rem;
+    color: #fff;
+}
+
+.dreams-card p{
+    font-size: 1.1rem;
+    width: 43rem;
+    position: relative;
+    top: .7rem;
+    left: .8rem;
+}
+
+.dreams-card button{
+    padding: .8rem 1rem;
+    border-radius: 2rem;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    top: 5rem;
+    left: .9rem;
+    border: .2rem solid #333;
+}
+
+.dreams-img img{
+    width: 33rem;
+    position: relative;
+    left: 43.6rem;
+    bottom: 15.4rem;
+    border-radius: 1rem;
+    padding-right: m;
+}
+
+
+/* third section */
+.third-container{
+    padding: 3rem 1.3rem 1.2rem 1.2rem;
+
+}
+
+.collection h1{
+    position: relative;
+    top: 2rem;
+    font-size: 4.4rem;
+    width: 45rem;
+}
+
+.collection-text p{
+    width: 34.5rem;
+    position: relative;
+    left: 43rem;
+    bottom: 2.3rem;
+}
+
+
+/* four section */
+.buttons-container{
+    display: flex;
+    gap: 10px;
+}
+
+.button{
+    padding: .4rem .8rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .03s ease;
+    position: relative;
+    left: 44rem;
+    top: .6rem;
+}
+
+.button.active{
+    background-color: black;
+    color: white;
+}
+
+.button:hover{
+    background-color: #ddd;
+}
+
+.product-card img{
+    width: 42rem;
+    position: relative;
+    bottom: 2rem;
+    left: 1rem;
+    border-radius: 1rem;
+    height: 27rem;
+}
+
+.product-card .product-img2{
+    position: relative;
+    top: -20px;
+}
+
+div.product-cardleft{
+    height: 2rem;
+}
+
+.product-cardleft img{
+    width: 33.8rem;
+    position: relative;
+    left: 44rem;
+    bottom: 52.2rem;
+    border-radius: 1rem;
+}
+
+.product-detaile p{
+     width: 24rem;
+}
+
+.oneproduct{
+    position: relative;
+    bottom: 37.6rem;
+    left: 1.5rem;
+}
+
+p.oneproduct{
+    top: -38rem;
+}
+
+h3.oneproduct{
+    top: -37.8rem;
+    display: inline-block;
+}
+
+button.oneproduct{
+    padding: .4rem .7rem;
+    border-radius: 20px;
+    position: relative;
+    left: -2.3rem;
+    top: -36rem;
+    cursor: pointer;
+}
+
+p.twoproduct{
+    top: -16rem;
+}
+
+h3.twoproduct{
+    top: -15.8rem;
+    display: inline-block;
+}
+
+button.twoproduct{
+    padding: .4rem .7rem;
+    border-radius: 20px;
+    position: relative;
+    left: -2rem;
+    top: -12.3rem;
+    color: black;
+    cursor: pointer;
+}
+
+p.threeproduct{
+    top: -21.4rem;
+}
+
+h3.threeproduct{
+    top: -20.9rem;
+    display: inline-block;
+}
+
+button.threeproduct{
+    padding: .4rem .7rem;
+    border-radius: 20px;
+    position: relative;
+    left: 41rem;
+    top: -16.5rem;
+    cursor: pointer;
+}
+
+.twoproduct{
+    position: relative;
+    bottom: 14rem;
+    left: 2rem;
+    color: white;
+}
+
+.threeproduct{
+    position: relative;
+    bottom: 18.7rem;
+    left: 45rem;
+
+}
+
+div.product-detaile{
+    height: 0rem;
+}
+
+
+/* five section */
+.collection-htext h1{
+    font-size: 4.9rem;
+    width: 46rem;
+}
+
+.collection-htext p{
+    width: 46rem;
+    position: relative;
+    top: .6rem;
+    bottom: .6rem;
+}
+
+.season-img img{
+    width: 46rem;
+    height: 20rem;
+    position: relative;
+    top: 1.8rem;
+    left: 1.1rem;
+    border-radius: 1rem;
+}
+
+div.summer-season{
+    background: linear-gradient(45deg, #f56000, #ac591ea1);
+    position: relative;
+    top: 2.2rem;
+    left: 1rem;
+    width: 42.5rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+
+.summer-season h1{
+    font-size: 3rem;
+    position: relative;
+    top: .7rem;
+    left: .5rem;
+}
+
+.summer-season p{
+    width: 40rem;
+    position: relative;
+    top: 1rem;
+    left: .5rem;
+}
+
+.summer-season button{
+    padding: .5rem .9rem;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 10.5rem;
+    left: .5rem;
+}
+
+.summer-season button:hover{
+    background-color: #888888;
+}
+
+div.summer-seasonright{
+    height: 2rem;
+}
+
+.summer-seasonright img{
+    width: 29.8rem;
+    position: relative;
+    left: 47.8rem;
+    bottom: 54.1rem;
+    height: 35.6rem;
+    border-radius: 1rem;
+}
+
+div.summerseason-rightlower{
+    height: 4rem;
+}
+
+.summerseason-rightlower img{
+    width: 33.9rem;
+    height: 20rem;
+    position: relative;
+    bottom: 19.8rem;
+    left: 44rem;
+    border-radius: 1rem;
+}
+
+/* six section */
+.special-img img{
+    width: 97.4%;
+    height: 100%;
+    border-radius: 1rem;
+    position: relative;
+    left: 1rem;
+}
+
+div.special-detaile{
+    height: 1rem;
+}
+
+.special-detaile h1{
+    font-size: 4.5rem;
+    width: 21rem;
+    position: relative;
+    bottom: 39rem;
+    left: 1.4rem;
+}
+
+.special-detaile h1 .one{
+    background-color: #333;
+    color: #888888;
+    border-radius: .8rem;
+}
+
+.special-detaile h2{
+    font-size: 4.5rem;
+    width: 19rem;
+    position: relative;
+    bottom: 48.4rem;
+    left: 59rem;
+}
+
+.special-detaile h2 .two{
+    background-color: #333;
+    color: #888888;
+    border-radius: .8rem;
+}
+
+.special-detaile p{
+    width: 30rem;
+    position: relative;
+    bottom: 26rem;
+    left: 1.4rem;
+}
+
+.special-detaile button{
+    padding: .5rem .9rem;
+    border-radius: 20px;
+    position: relative;
+    bottom: 28.6rem;
+    left: 71rem;
+}
