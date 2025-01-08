@@ -1,388 +1,420 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
 }
 
-/* fist section */
-.first-section{
-    padding: 0 1.5rem;
+:root{
+    --textcolor--: white;
+    --sectextcolor--:whitesmoke;
+    --btncolor--: rgb(14, 8, 40);
 }
 
-.header-text h1{
-    font-size: 6.2rem;
-    text-align: center;
+html , body{
+    overflow-x: hidden;
 }
 
-.header-img img{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
+a{
+    color: var(--btncolor--);
 }
 
-.header-img p{
-    width: 34rem;
-    position: relative;
-    bottom: 4rem;
-    left: .6rem;
+a:hover{
+    background-color: rgb(154, 148, 138);
+    color: var(--btncolor--);
+    padding: 8px 15px;
+    border-radius: 20px;
 }
 
-.upgrade-style h1{
-    font-size: 3.2rem;
-    text-align: center;
-    background-color: black;
-    color: white;
-    position: relative;
-    bottom: 2rem;
-}
-
-
-/* second section */
-.dreams-card{
-    background: linear-gradient(45deg, #8a350bde, #ab6616ba);
-    width: 43rem;
-    height: 22rem;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    position: relative;
-    top: 2rem;
-}
-
-.dreams-card h1{
-    font-size: 3.8rem;
-    width: 45rem;
-    position: relative;
-    top: .4rem;
-    left: .8rem;
-    color: #fff;
-}
-
-.dreams-card p{
-    font-size: 1.1rem;
-    width: 43rem;
-    position: relative;
-    top: .7rem;
-    left: .8rem;
-}
-
-.dreams-card button{
-    padding: .8rem 1rem;
-    border-radius: 2rem;
-    background-color: white;
-    color: #333;
-    cursor: pointer;
-    position: relative;
-    top: 5rem;
-    left: .9rem;
-    border: .2rem solid #333;
-}
-
-.dreams-img img{
-    width: 33rem;
-    position: relative;
-    left: 43.6rem;
-    bottom: 15.4rem;
-    border-radius: 1rem;
-    padding-right: m;
-}
-
-
-/* third section */
-.third-container{
-    padding: 3rem 1.3rem 1.2rem 1.2rem;
-
-}
-
-.collection h1{
-    position: relative;
-    top: 2rem;
-    font-size: 4.4rem;
-    width: 45rem;
-}
-
-.collection-text p{
-    width: 34.5rem;
-    position: relative;
-    left: 43rem;
-    bottom: 2.3rem;
-}
-
-
-/* four section */
-.buttons-container{
+ul{
+    list-style: none;
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 30px;
+    font-weight: 700;
 }
 
-.button{
-    padding: .4rem .8rem;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: white;
-    color: #333;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all .03s ease;
-    position: relative;
-    left: 44rem;
-    top: .6rem;
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--textcolor--);
+    display: flex;
 }
 
-.button.active{
-    background-color: black;
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(IMG/hero-bg.jpg);
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-containt{
+    margin-bottom: 150px;
+    color: var(--textcolor--);
+    text-align: center;
+}
+
+h1.yellow{
+    color: var(--sectextcolor--);
+}
+
+.header-containt h1{
+    font-size: 7vmin;
+}
+
+.header-containt h1.yellow{
+    margin-bottom: 35px;
+}
+
+.header-containt p{
+    margin: 30px 60px;
+    font-size: 3vmin;
+    width: 90%;
+}
+
+.header-containt .ctn{
+    padding: 10px 20px;
+    border: 1px solid var(--btncolor--);
+    border-radius: 30px;
+    background: var(--btncolor--);
+    color: rgb(255, 255, 255);
+    font-size: 3.5vmin;
+}
+
+a.ctnyellow{
+    padding: 10px 20px;
+    border: 1px solid var(--btncolor--);
+    border-radius: 30px;
+    color: var(--textcolor--);
+    background: var(--btncolor--);
+    font-size: 3.5vmin;
+}
+
+.ctn:hover{
+    background-color: var(--textcolor--);
+    color: var(--btncolor--);
+    border: 1px solid var(--textcolor--);
+}
+
+.ctnyellow:hover{
+    background-color: var(--sectextcolor--);
+    color: var(--btncolor--);
+    border: 1px solid var(--sectextcolor--);
+}
+
+.menu-btn{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        cursor: pointer;
+        display: none;
+}
+
+section{
+    width: 90%;
+    margin: 80px auto;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+div.col{
+    background: whitesmoke;
+    border-radius: 9px;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .row{
+    margin-top: 50px;
+}
+
+.about h1{
+    font-size: 7vmin;
+    color: var(--btncolor--);
+    margin: 20px auto;
+}
+
+p{
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.about .row .col img{
+    border-radius: 8px;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+    width: 45%;
+}
+
+.about .ctn{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid var(--btncolor--);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: var(--sectextcolor--);
+    background: var(--btncolor--);
+}
+
+.about .ctn:hover{
+    background: var(--sectextcolor--);
+    color: var(--btncolor--);
+}
+
+
+
+@media only screen and (max-width: 950px){
+    .menu-btn{
+        display: block;
+    }
+
+    a{
+        color: var(--textcolor--);
+    }
+
+    .navbar{
+        padding: 0;
+        color: var(--textcolor--);
+    }
+
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    ul{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        margin: auto auto;
+        background: var(--btncolor--);
+        margin-top: -999px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col img{
+        max-width: 90%;
+    }
+}
+
+section .service{
+    width: 100%;
+    height: 80vh;
+}
+
+.service h1{
+    font-size: 8vmin;
+    text-align: center;
+    font-weight: bold;
+    color: var(--btncolor--);
+}
+
+.service h4{
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.service p{
+    margin-top: 15px;
+}
+
+.service .ctn{
+    color: var(--textcolor--);
+    border: 1px solid var(--btncolor--);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    background: var(--btncolor--);
+}
+
+.service .ctn:hover{
+    background-color: var(--textcolor--);
+    color: var(--btncolor--);
+}
+
+.service img{
+     width: 15vw;
+     margin-top: 10px;
+}
+
+.service-content{
+    background: whitesmoke;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.client h1{
+    font-size: 8vmin;
+    text-align: center;
+    font-weight: bold;
+}
+
+.client img{
+    width: 30vw;
+    border-radius: 2%;
+    margin-top: 15px;
+}
+
+.client h4{
+    font-size: 4vmin;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--btncolor--);
+
+}
+
+.client p{
+    font-size: 3vmin;
+}
+
+div.client-content{
+    text-align: center;
+    background-color: var(--sectextcolor--);
+}
+
+.contact{
+    background-image: url(IMG/contact-bg.jpg);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 7vmin;
+    font-weight: bold;
+    color: var(--btncolor--);
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+input.name{
+    padding: 6px 13px;
+    background-color: var(--btncolor--);
+    border: none;
+    width: 55vw;
+    color: var(--textcolor--);
+}
+
+input.email{
+    padding: 6px 13px;
+    background-color: var(--btncolor--);
+    border: none;
+    width: 55vw;
+    color: var(--textcolor--);
+}
+
+input.phone{
+    padding: 6px 13px;
+    background-color: var(--btncolor--);
+    border: none;
+    width: 55vw;
+    color: var(--textcolor--);
+}
+
+input.message{
+    padding: 25px 40px;
+    background-color: var(--btncolor--);
+    border: none;
+    width: 55vw;
+    color: var(--textcolor--);
+}
+
+.contact .ctn{
+    border: 2px solid var(--btncolor--);
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: var(--btncolor--);
+    color: var(--textcolor--);
+    width: max-content;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.contact .ctn:hover{
+    border: 1px solid var(--btncolor--);
+    background-color: var(--textcolor--);
+    color: var(--btncolor--);
+}
+
+.guards{
+    text-align: center;
+}
+
+.guards h1{
+    font-size: 8vmin;
+    font-weight: bold;
+    color: var(--btncolor--);
+}
+
+.guards p{
+    margin-top: 10px;
+}
+.guards img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.guards-info{
+    background: linear-gradient(45deg, #100b1f45, #0e0a1a4f);
+    width: 100%;
+    height: 20vh;
     color: white;
-}
-
-.button:hover{
-    background-color: #ddd;
-}
-
-.product-card img{
-    width: 42rem;
-    position: relative;
-    bottom: 2rem;
-    left: 1rem;
-    border-radius: 1rem;
-    height: 27rem;
-}
-
-.product-card .product-img2{
-    position: relative;
-    top: -20px;
-}
-
-div.product-cardleft{
-    height: 2rem;
-}
-
-.product-cardleft img{
-    width: 33.8rem;
-    position: relative;
-    left: 44rem;
-    bottom: 52.2rem;
-    border-radius: 1rem;
-}
-
-.product-detaile p{
-     width: 24rem;
-}
-
-.oneproduct{
-    position: relative;
-    bottom: 37.6rem;
-    left: 1.5rem;
-}
-
-p.oneproduct{
-    top: -38rem;
-}
-
-h3.oneproduct{
-    top: -37.8rem;
-    display: inline-block;
-}
-
-button.oneproduct{
-    padding: .4rem .7rem;
-    border-radius: 20px;
-    position: relative;
-    left: -2.3rem;
-    top: -36rem;
-    cursor: pointer;
-}
-
-p.twoproduct{
-    top: -16rem;
-}
-
-h3.twoproduct{
-    top: -15.8rem;
-    display: inline-block;
-}
-
-button.twoproduct{
-    padding: .4rem .7rem;
-    border-radius: 20px;
-    position: relative;
-    left: -2rem;
-    top: -12.3rem;
-    color: black;
-    cursor: pointer;
-}
-
-p.threeproduct{
-    top: -21.4rem;
-}
-
-h3.threeproduct{
-    top: -20.9rem;
-    display: inline-block;
-}
-
-button.threeproduct{
-    padding: .4rem .7rem;
-    border-radius: 20px;
-    position: relative;
-    left: 41rem;
-    top: -16.5rem;
-    cursor: pointer;
-}
-
-.twoproduct{
-    position: relative;
-    bottom: 14rem;
-    left: 2rem;
-    color: white;
-}
-
-.threeproduct{
-    position: relative;
-    bottom: 18.7rem;
-    left: 45rem;
-
-}
-
-div.product-detaile{
-    height: 0rem;
-}
-
-
-/* five section */
-.collection-htext h1{
-    font-size: 4.9rem;
-    width: 46rem;
-}
-
-.collection-htext p{
-    width: 46rem;
-    position: relative;
-    top: .6rem;
-    bottom: .6rem;
-}
-
-.season-img img{
-    width: 46rem;
-    height: 20rem;
-    position: relative;
-    top: 1.8rem;
-    left: 1.1rem;
-    border-radius: 1rem;
-}
-
-div.summer-season{
-    background: linear-gradient(45deg, #f56000, #ac591ea1);
-    position: relative;
-    top: 2.2rem;
-    left: 1rem;
-    width: 42.5rem;
-    height: 20rem;
-    border-radius: 1rem;
-}
-
-.summer-season h1{
-    font-size: 3rem;
-    position: relative;
-    top: .7rem;
-    left: .5rem;
-}
-
-.summer-season p{
-    width: 40rem;
-    position: relative;
-    top: 1rem;
-    left: .5rem;
-}
-
-.summer-season button{
-    padding: .5rem .9rem;
-    border-radius: 20px;
-    cursor: pointer;
-    position: relative;
-    top: 10.5rem;
-    left: .5rem;
-}
-
-.summer-season button:hover{
-    background-color: #888888;
-}
-
-div.summer-seasonright{
-    height: 2rem;
-}
-
-.summer-seasonright img{
-    width: 29.8rem;
-    position: relative;
-    left: 47.8rem;
-    bottom: 54.1rem;
-    height: 35.6rem;
-    border-radius: 1rem;
-}
-
-div.summerseason-rightlower{
-    height: 4rem;
-}
-
-.summerseason-rightlower img{
-    width: 33.9rem;
-    height: 20rem;
-    position: relative;
-    bottom: 19.8rem;
-    left: 44rem;
-    border-radius: 1rem;
-}
-
-/* six section */
-.special-img img{
-    width: 97.4%;
-    height: 100%;
-    border-radius: 1rem;
-    position: relative;
-    left: 1rem;
-}
-
-div.special-detaile{
-    height: 1rem;
-}
-
-.special-detaile h1{
-    font-size: 4.5rem;
-    width: 21rem;
-    position: relative;
-    bottom: 39rem;
-    left: 1.4rem;
-}
-
-.special-detaile h1 .one{
-    background-color: #333;
-    color: #888888;
-    border-radius: .8rem;
-}
-
-.special-detaile h2{
-    font-size: 4.5rem;
-    width: 19rem;
-    position: relative;
-    bottom: 48.4rem;
-    left: 59rem;
-}
-
-.special-detaile h2 .two{
-    background-color: #333;
-    color: #888888;
-    border-radius: .8rem;
-}
-
-.special-detaile p{
-    width: 30rem;
-    position: relative;
-    bottom: 26rem;
-    left: 1.4rem;
-}
-
-.special-detaile button{
-    padding: .5rem .9rem;
-    border-radius: 20px;
-    position: relative;
-    bottom: 28.6rem;
-    left: 71rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
